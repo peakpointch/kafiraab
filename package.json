@@ -1,0 +1,15 @@
+{
+  "name": "kafiraab",
+  "version": "0.0.1",
+  "description": "A café in the heart of Baden",
+  "private": false,
+  "scripts": {
+    "dev": "devflow dev",
+    "build": "devflow build"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@xatom/core": "1.0.12",
+    "devflow": "github:peakpointch/devflow"
+  }
+}
