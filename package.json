@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@xatom/core": "1.0.12",
-    "devflow": "github:peakpointch/devflow"
+    "devflow": "github:peakpointch/devflow",
+    "peakflow": "github:peakpointch/peakflow"
   }
 }
