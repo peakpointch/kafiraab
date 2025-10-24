@@ -1,7 +1,7 @@
 import { onReady } from "@xatom/core";
-import { helloWorldRoutes } from "./routes";
+import { app, global } from "./routes";
 
 onReady(() => {
-  helloWorldRoutes();
+  global();
+  app();
 });
-

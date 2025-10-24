@@ -1,6 +1,12 @@
 import { WFRoute } from "@xatom/core";
-import { helloWorldFn } from "../modules";
+import peakflow from "peakflow";
 
-export const helloWorldRoutes = () => {
-  new WFRoute("/").execute(helloWorldFn);
-};
+export function app() {
+  new WFRoute("/").execute(() => {
+    peakflow.execute("swiper");
+  });
+}
+
+export function global() {
+  peakflow.execute("dateflow");
+}
