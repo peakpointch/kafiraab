@@ -7,10 +7,18 @@
     "dev": "devflow dev",
     "build": "devflow build"
   },
+  "libswitch": {
+    "name": "peakflow",
+    "local": "../../peakflow/",
+    "remote": "github:peakpointch/peakflow.git",
+    "tsconfigDev": "tsconfig.dev.json",
+    "tsconfigProd": "tsconfig.prod.json"
+  },
   "license": "MIT",
   "dependencies": {
     "@xatom/core": "1.0.12",
     "devflow": "github:peakpointch/devflow",
+    "libswitch": "github:peakpointch/libswitch",
     "peakflow": "github:peakpointch/peakflow"
   }
 }
