@@ -6,7 +6,3 @@ export function app() {
     peakflow.execute("swiper");
   });
 }
-
-export function global() {
-  peakflow.execute("dateflow");
-}
