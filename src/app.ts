@@ -1,26 +1,21 @@
-import { onReady } from "@xatom/core";
+import { WFRoute, onReady } from "@xatom/core";
 import { app } from "./routes";
 import peakflow from "peakflow";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { onWidgetLoad } from "peakflow/elfsight";
+import initPdfEmbed from "@/modules/pdfEmbed";
 
 onReady(() => {
   global();
   app();
 });
 
+new WFRoute("/dokumente/(.*)").execute(() => {
+  initPdfEmbed();
+});
+
 export function global() {
-  onWidgetLoad(
-    `[data-elfsight-embed="google-reviews"]`,
-    ScrollTrigger.refresh,
-    {
-      delay: 200,
-      conditions: (widget) =>
-        Boolean(widget.querySelector(".swiper-initialized")),
-    },
-  );
   peakflow.execute("dateflow");
   animations();
 }
