@@ -23,7 +23,7 @@
     "peakflow": "github:peakpointch/peakflow#v0.3.0-alpha.3"
   },
   "devDependencies": {
-    "devflow": "github:peakpointch/devflow",
+    "devflow": "github:peakpointch/devflow#v1.1.0",
     "libswitch": "github:peakpointch/libswitch#v0.1.1"
   }
 }
